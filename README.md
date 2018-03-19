@@ -11,8 +11,7 @@
 sudo systemctl restart winbindd.service smbd.service nmbd.service```
 1. Join the domain: ```net ads join -U administrator```
 1. Restart services again: ```sudo systemctl restart winbindd.service smbd.service nmbd.service```
-1. Send a **Winbddd Ping**: ```
-# wbinfo --ping-dc
+1. Send a **Winbddd Ping**: ```# wbinfo --ping-dc
 checking the NETLOGON for domain[SAMDOM] dc connection to "DC.SAMDOM.EXAMPLE.COM" succeeded
 ```
 1. Look up Domain Users and Groups to verif you're getting that information back: ```
